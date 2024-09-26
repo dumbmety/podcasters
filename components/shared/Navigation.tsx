@@ -13,7 +13,7 @@ const items: Item[] = [
 
 export default function Navigation() {
   return (
-    <nav className="pl-12">
+    <nav className="pl-12 flex justify-between w-full">
       <ul className="flex space-x-12 text-sm uppercase font-light">
         {items.map(({ label, href }) => (
           <li key={href}>
@@ -22,6 +22,19 @@ export default function Navigation() {
             </Link>
           </li>
         ))}
+      </ul>
+
+      <ul className="flex space-x-12 text-sm uppercase font-light">
+        <li>
+          <Link className="transition-all hover:text-brand" href="/login">
+            Login
+          </Link>
+        </li>
+        <li>
+          <Link className="transition-all hover:text-brand" href="/signup">
+            Signup
+          </Link>
+        </li>
       </ul>
     </nav>
   );
