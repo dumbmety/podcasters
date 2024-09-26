@@ -13,6 +13,7 @@ const config: Config = {
       ...colors,
       brand: {
         DEFAULT: "#F47220",
+        hover: "#E9610C",
       },
     },
   },
