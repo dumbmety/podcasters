@@ -2,8 +2,24 @@ import clsx from "clsx";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { Switch } from "../ui/switch";
 
-function Pricing({ children }: { children: React.ReactNode }) {
-  return <li className="flex-1 flex flex-col min-h-96">{children}</li>;
+function Pricing({
+  isSelected,
+  children,
+}: {
+  isSelected?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <li
+      className={clsx(
+        "flex-1 flex flex-col min-h-96 relative",
+        isSelected &&
+          "before:absolute before:inset-0 before:z-10 before:scale-105 before:rounded-lg before:bg-neutral-50"
+      )}
+    >
+      <div className="flex flex-1 flex-col relative z-20">{children}</div>
+    </li>
+  );
 }
 
 function PricingHeader({ children }: { children: React.ReactNode }) {
@@ -16,8 +32,23 @@ function PricingTitle({ children }: { children: string }) {
   return <h3 className="capitalize mb-0.5">{children}</h3>;
 }
 
-function PricingAmount({ children }: { children: string | string[] }) {
-  return <p className="font-light mb-5">{children}</p>;
+function PricingAmount({
+  discount,
+  children,
+}: {
+  discount?: number | false;
+  children: string | string[];
+}) {
+  return (
+    <p className="font-light mb-5 flex items-center space-x-1">
+      <span>{children}</span>{" "}
+      {discount && (
+        <span className="text-xs bg-brand rounded-full px-1.5 py-0.5 text-white">
+          -{discount}%
+        </span>
+      )}
+    </p>
+  );
 }
 
 function PricingDesc({ children }: { children: string }) {

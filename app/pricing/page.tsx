@@ -47,7 +47,7 @@ export default function PricingPage() {
           <Pricing>
             <Pricing.Header>
               <Pricing.Title>Basic</Pricing.Title>
-              <Pricing.Amount>
+              <Pricing.Amount discount={isYearly && 20}>
                 ${isYearly ? "8" : "10"} per month
               </Pricing.Amount>
               <Pricing.Switch value={isYearly} onChange={setIsYearly} />
@@ -66,10 +66,10 @@ export default function PricingPage() {
               </Pricing.Actions>
             </Pricing.Content>
           </Pricing>
-          <Pricing>
+          <Pricing isSelected>
             <Pricing.Header>
               <Pricing.Title>Business</Pricing.Title>
-              <Pricing.Amount>
+              <Pricing.Amount discount={isYearly && 20}>
                 ${isYearly ? "12" : "14"} per month
               </Pricing.Amount>
               <Pricing.Switch value={isYearly} onChange={setIsYearly} />
