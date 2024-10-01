@@ -13,9 +13,9 @@ export default function PricingPage() {
       <Navbar />
 
       <div className="container mx-auto px-6 py-16 flex flex-col min-h-[calc(100vh-83px)]">
-        <header className="text-center space-y-4 mb-16">
+        <header className="md:text-center space-y-4 mb-16">
           <h1 className="text-4xl font-bold">Pricing</h1>
-          <p className="text-lg leading-7 font-light">
+          <p className="text-xs md:text-lg leading-5 md:leading-7 font-light">
             Use Linear for free with your whole team. Upgrade to enable
             <br />
             unlimited issues, enhanced security controls, and additional
@@ -23,7 +23,7 @@ export default function PricingPage() {
           </p>
         </header>
 
-        <ul className="flex divide-x">
+        <ul className="grid gap-y-2 lg:gap-0 md:grid-cols-2 lg:grid-cols-4 lg:divide-x">
           <Pricing>
             <Pricing.Header>
               <Pricing.Title>Free</Pricing.Title>
@@ -86,9 +86,11 @@ export default function PricingPage() {
               />
               <Pricing.Actions>
                 <Pricing.Button isFill>Get started</Pricing.Button>
-                <span className="text-neutral-400">or</span>
+                <span className="hidden xl:inline-block text-center xl:text-left text-neutral-400">
+                  or
+                </span>
                 <Link
-                  className="border-b"
+                  className="hidden xl:inline-block text-center xl:text-left xl:border-b"
                   href="mailto:dev.mehdineysi@gmail.com"
                 >
                   contact sales

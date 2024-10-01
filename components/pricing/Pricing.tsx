@@ -12,9 +12,9 @@ function Pricing({
   return (
     <li
       className={clsx(
-        "flex-1 flex flex-col min-h-96 relative",
+        "flex-1 flex flex-col min-h-[500px] relative",
         isSelected &&
-          "before:absolute before:inset-0 before:z-10 before:scale-105 before:rounded-lg before:bg-neutral-50"
+          "lg:before:absolute lg:before:inset-0 lg:before:z-10 lg:before:scale-105 lg:before:rounded-lg lg:before:bg-neutral-50"
       )}
     >
       <div className="flex flex-1 flex-col relative z-20">{children}</div>
@@ -87,14 +87,16 @@ function PricingContent({ children }: { children: React.ReactNode }) {
 
 function PricingList({ items }: { items: string[] }) {
   return (
-    <ul className="space-y-3 flex-1">
+    <ul className="space-y-3 flex-1 w-full">
       {items.map((item, index) => (
         <li
           key={index}
           className="flex items-center space-x-2 text-sm font-light"
         >
           <CheckIcon />
-          <span>{item}</span>
+          <span title={item} className="truncate hover:text-clip">
+            {item}
+          </span>
         </li>
       ))}
     </ul>
@@ -102,7 +104,11 @@ function PricingList({ items }: { items: string[] }) {
 }
 
 function PricingActions({ children }: { children: React.ReactNode }) {
-  return <div className="flex items-center space-x-1 text-sm">{children}</div>;
+  return (
+    <div className="flex flex-col xl:flex-row w-full space-y-1 xl:items-center space-x-1 text-sm">
+      {children}
+    </div>
+  );
 }
 
 function PricingButton({
@@ -115,7 +121,7 @@ function PricingButton({
   return (
     <button
       className={clsx(
-        "rounded-md px-3 py-1.5",
+        "rounded-md px-6 py-2 lg:px-3 lg:py-1.5",
         isFill ? "bg-brand text-white" : "bg-neutral-100"
       )}
     >
