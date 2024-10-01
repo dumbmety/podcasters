@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { Switch } from "../ui/switch";
+import { Badge } from "../ui/badge";
 
 function Pricing({
   isSelected,
@@ -41,12 +42,7 @@ function PricingAmount({
 }) {
   return (
     <p className="font-light mb-5 flex items-center space-x-1">
-      <span>{children}</span>{" "}
-      {discount && (
-        <span className="text-xs bg-brand rounded-full px-1.5 py-0.5 text-white">
-          -{discount}%
-        </span>
-      )}
+      <span>{children}</span> {discount && <Badge>-{discount}%</Badge>}
     </p>
   );
 }
