@@ -1,16 +1,17 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
+import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/pricing/Pricing";
-import Link from "next/link";
 
 export default function PricingPage() {
   const [isYearly, setIsYearly] = useState(true);
 
   return (
     <div>
-      <Navbar />
+      <Navbar activeLink="/pricing" />
 
       <div className="container mx-auto px-6 py-16 flex flex-col min-h-[calc(100vh-83px)]">
         <header className="md:text-center space-y-4 mb-16">
@@ -121,11 +122,7 @@ export default function PricingPage() {
           </Pricing>
         </ul>
 
-        <footer className="mt-auto">
-          <p className="text-xs text-center text-neutral-500">
-            Made by Amir & Mety
-          </p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

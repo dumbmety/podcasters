@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Link from "next/link";
 import HamburgerMenu from "../HamburgerMenu";
 
@@ -12,14 +13,24 @@ const items: Item[] = [
   { label: "Blog", href: "/blog" },
 ];
 
-export default function Navigation() {
+export default function Navigation({
+  activeLink,
+}: {
+  activeLink: "/" | "/about" | "/pricing" | "/blog" | "/login" | "/signup";
+}) {
   return (
     <>
       <nav className="pl-12 lg:flex justify-between w-full hidden">
         <ul className="flex space-x-12 text-sm uppercase font-light">
           {items.map(({ label, href }) => (
             <li key={href}>
-              <Link className="transition-all hover:text-brand" href={href}>
+              <Link
+                className={clsx(
+                  "transition-all",
+                  href === activeLink ? "text-brand" : "hover:text-brand"
+                )}
+                href={href}
+              >
                 {label}
               </Link>
             </li>
@@ -28,12 +39,24 @@ export default function Navigation() {
 
         <ul className="flex space-x-12 text-sm uppercase font-light">
           <li>
-            <Link className="transition-all hover:text-brand" href="/login">
+            <Link
+              className={clsx(
+                "transition-all",
+                "/login" === activeLink ? "text-brand" : "hover:text-brand"
+              )}
+              href="/login"
+            >
               Login
             </Link>
           </li>
           <li>
-            <Link className="transition-all hover:text-brand" href="/signup">
+            <Link
+              className={clsx(
+                "transition-all",
+                "/signup" === activeLink ? "text-brand" : "hover:text-brand"
+              )}
+              href="/signup"
+            >
               Signup
             </Link>
           </li>

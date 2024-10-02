@@ -9,8 +9,8 @@ import Transcript from "@/components/Transcript";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
+    <div>
+      <Navbar activeLink="/" />
       <Cover />
 
       <section className="container mx-auto py-6 flex space-x-12">
@@ -31,6 +31,6 @@ export default function Home() {
           <MoreEpisodes />
         </aside>
       </section>
-    </>
+    </div>
   );
 }
