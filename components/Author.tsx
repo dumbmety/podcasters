@@ -9,7 +9,9 @@ export default function Author({ biography, image, name, username }: User) {
         href={`/profile/${username}`}
         className="inline-flex items-center space-x-3"
       >
-        <Image src={image} width={64} height={64} alt={`${name}'s Profile`} />
+        <div className="bg-black w-16 h-16 overflow-hidden rounded-full">
+          <Image src={image} width={64} height={64} alt={`${name}'s Profile`} />
+        </div>
         <div className="translate-y-0.5">
           <h4 className="font-semibold text-lg leading-3">{name}</h4>
           <span className="text-xs inline-block text-neutral-500">

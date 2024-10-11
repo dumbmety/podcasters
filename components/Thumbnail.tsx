@@ -6,5 +6,9 @@ interface ThumbnailProps {
 }
 
 export default function Thumbnail({ src, alt }: ThumbnailProps) {
-  return <Image src={src} width={335} height={428} alt={alt} />;
+  return (
+    <div className="w-[335px] h-[428px] overflow-hidden">
+      <Image src={src} width={335} height={428} alt={alt} />
+    </div>
+  );
 }

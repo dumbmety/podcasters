@@ -1,3 +1,5 @@
+import RenderHTML from "./shared/RenderHTML";
+
 interface TranscriptProps {
   content: string;
 }
@@ -8,7 +10,10 @@ export default function Transcript({ content }: TranscriptProps) {
       <div className="border-b">
         <h4 className="pb-3 font-semibold text-lg">Transcript</h4>
       </div>
-      <p className="text-sm leading-6 text-neutral-700">{content}</p>
+      <RenderHTML
+        html={content}
+        className="text-sm leading-6 text-neutral-700"
+      />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 
+import { podcasts } from "@/constants/data";
 import { Podcast } from "@/types/models";
 import Author from "@/components/Author";
 import Cover from "@/components/Cover";
@@ -10,12 +11,11 @@ import Navbar from "@/components/Navbar";
 import ShareEpisode from "@/components/ShareEpisode";
 import Thumbnail from "@/components/Thumbnail";
 import Transcript from "@/components/Transcript";
-import { podcasts } from "@/constants/data";
 
 export default function Home() {
-  const [podcast, setPodcast] = useState<Podcast>(podcasts[0]);
+  const [podcast, setPodcast] = useState<Podcast>(podcasts[3]);
 
-  const handleChangePodcast = (slug: string) => {
+  const onChangePodcast = (slug: string) => {
     const targetPodcast = podcasts.find((p) => p.slug === slug);
 
     if (targetPodcast) {
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Navbar activeLink="/" />
-      <Cover />
+      <Cover cover={podcast.cover} />
 
       <section className="container mx-auto py-6 flex space-x-12">
         <aside className="space-y-12 w-[335px] -translate-y-64">
@@ -49,7 +49,10 @@ export default function Home() {
             slug={podcast.slug}
             tags={podcast.tags}
           />
-          <MoreEpisodes />
+          <MoreEpisodes
+            items={podcasts.filter((p) => p.slug !== podcast.slug)}
+            onChangePodcast={onChangePodcast}
+          />
         </aside>
       </section>
     </div>

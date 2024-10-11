@@ -181,6 +181,9 @@ export const posts: Post[] = [
 
 export const podcasts: Podcast[] = [
   {
+    duration: 62000,
+    description:
+      "An exciting exploration into the mastermind strategies and behind-the-scenes secrets of the popular heist thriller 'Money Heist'.",
     title: "Cracking the Code: The Genius Behind Money Heist",
     tags: ["heist", "crime_drama", "thriller"],
     slug: "cracking-the-code-the-genius-behind-money-heist",
@@ -197,5 +200,106 @@ export const podcasts: Podcast[] = [
     },
     transcript:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+  },
+  {
+    title: "Breaking the Boundaries: Inside the World of Formula 1",
+    tags: ["formula1", "racing", "sports"],
+    slug: "breaking-the-boundaries-inside-formula-1",
+    cover:
+      "https://images.unsplash.com/photo-1727431682397-e1ffda5e0ca3?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail:
+      "https://images.unsplash.com/photo-1632726144626-6f6a8876e35d?q=80&w=1990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    source:
+      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    author: {
+      name: "John Speedster",
+      username: "fastjohn",
+      image:
+        "https://images.unsplash.com/photo-1633710100753-562e784e327e?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      biography:
+        "A lifelong F1 fan, sharing deep dives and insights into the world of Formula 1 racing.",
+    },
+    transcript: `
+      <h2>Introduction</h2>
+      <p>Welcome to another episode of our Formula 1 podcast, where we break down the latest races and explore the world of high-speed racing.</p>
+      <h3>Race Highlights</h3>
+      <p>This week’s race in Monaco was a thrilling event. The sharp turns, combined with the unpredictable weather, gave us one of the most exciting races of the season.</p>
+      <ul>
+        <li>Max Verstappen takes the lead early.</li>
+        <li>Charles Leclerc struggles with tire management.</li>
+        <li>Surprising podium finish by Lando Norris.</li>
+      </ul>
+      <h3>Behind the Scenes</h3>
+      <p>The engineers play a critical role in the success of the teams. I had the chance to speak with one of Red Bull’s lead engineers about the challenges they faced this season.</p>
+    `,
+    duration: 398000,
+    description:
+      "A deep dive into the adrenaline-fueled world of Formula 1, breaking down the latest races and behind-the-scenes action.",
+  },
+  {
+    title: "Designing the Future: The Rise of AI in Architecture",
+    tags: ["architecture", "ai", "design"],
+    slug: "designing-the-future-ai-in-architecture",
+    cover:
+      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail:
+      "https://images.unsplash.com/photo-1551038247-3d9af20df552?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    source:
+      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    author: {
+      name: "Jane Arch",
+      username: "architectjane",
+      image:
+        "https://images.unsplash.com/profile-1632993142631-ebf7e5591c9bimage?w=150&dpr=1&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      biography:
+        "Jane Arch is an award-winning architect who explores the intersection of technology and design.",
+    },
+    transcript: `
+      <h2>Introduction</h2>
+      <p>In today's episode, we explore how artificial intelligence is revolutionizing the field of architecture, from conceptual design to project management.</p>
+      <h3>AI in Design</h3>
+      <p>Architects are increasingly using AI to generate new forms, optimize structures, and improve sustainability.</p>
+      <blockquote>"AI allows us to test design ideas faster than ever before, with incredible precision," says Jane Arch.</blockquote>
+      <h3>Case Studies</h3>
+      <p>One prime example of AI in architecture is Zaha Hadid’s latest project, which leverages machine learning to design highly efficient building systems.</p>
+    `,
+    duration: 459000,
+    description:
+      "Exploring the revolutionary role of AI in architecture, from generating innovative designs to improving sustainability.",
+  },
+  {
+    title: "Soundscapes of the Future: Exploring Virtual Reality Audio",
+    tags: ["virtual_reality", "audio", "technology"],
+    slug: "soundscapes-of-the-future-vr-audio",
+    cover:
+      "https://images.unsplash.com/photo-1581092808365-07e3ac5960cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail:
+      "https://images.unsplash.com/photo-1643837706361-4615d2e4a8de?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    source:
+      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    author: {
+      name: "Alex Wave",
+      username: "audiowave",
+      image:
+        "https://images.unsplash.com/profile-1626911717537-7892bad5305dimage?w=150&dpr=1&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      biography:
+        "Alex Wave is a sound designer and technologist, pushing the boundaries of immersive audio experiences.",
+    },
+    transcript: `
+      <h2>Introduction</h2>
+      <p>As virtual reality continues to grow, so does the importance of immersive audio. In this episode, we explore how sound is shaping the VR experience.</p>
+      <h3>Immersive Sound Design</h3>
+      <p>Virtual reality isn't just about what you see, but also what you hear. Proper sound design enhances the experience, making it more believable and engaging.</p>
+      <h3>Key Technologies</h3>
+      <ul>
+        <li>3D Audio</li>
+        <li>Binaural Recording</li>
+        <li>Ambisonics</li>
+      </ul>
+      <p>These technologies allow sound designers to create environments that feel real, even when they're entirely virtual.</p>
+    `,
+    duration: 510000,
+    description:
+      "Delving into the future of sound in virtual reality, where audio enhances immersive digital experiences.",
   },
 ];

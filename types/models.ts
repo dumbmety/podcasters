@@ -24,4 +24,6 @@ export interface Podcast {
   source: string;
   thumbnail: string;
   transcript: string;
+  duration: number;
+  description: string;
 }

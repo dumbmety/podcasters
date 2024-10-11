@@ -4,7 +4,8 @@ export const getShareUrl = (
   slug: string,
   tags: string[]
 ) => {
-  const url = window.location.href + slug;
+  // TODO: get url site
+  const url = slug;
 
   switch (platform) {
     case "twitter": {
