@@ -7,3 +7,21 @@ export interface Post {
   description: string;
   slug: string;
 }
+
+export interface User {
+  name: string;
+  image: string;
+  username: string;
+  biography: string;
+}
+
+export interface Podcast {
+  slug: string;
+  title: string;
+  tags: string[];
+  author: User;
+  cover: string;
+  source: string;
+  thumbnail: string;
+  transcript: string;
+}

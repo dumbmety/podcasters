@@ -1,7 +1,10 @@
 import Image from "next/image";
 
-import image from "@/assets/thumbnail.png";
+interface ThumbnailProps {
+  src: string;
+  alt: string;
+}
 
-export default function Thumbnail() {
-  return <Image src={image.src} width={335} height={428} alt="Thumbnail" />;
+export default function Thumbnail({ src, alt }: ThumbnailProps) {
+  return <Image src={src} width={335} height={428} alt={alt} />;
 }

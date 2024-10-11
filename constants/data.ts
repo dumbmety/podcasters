@@ -1,4 +1,4 @@
-import { Post } from "@/types/models";
+import { Post, Podcast } from "@/types/models";
 
 export const posts: Post[] = [
   {
@@ -176,5 +176,26 @@ export const posts: Post[] = [
       "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Async JavaScript is essential for modern web applications. Learn how to master async code with Promises and async/await.",
+  },
+];
+
+export const podcasts: Podcast[] = [
+  {
+    title: "Cracking the Code: The Genius Behind Money Heist",
+    tags: ["heist", "crime_drama", "thriller"],
+    slug: "cracking-the-code-the-genius-behind-money-heist",
+    cover: "https://i.ibb.co/0VkN0ZB/cover.png",
+    thumbnail: "https://i.ibb.co/pvTG5MK/thumbnail.png",
+    source:
+      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    author: {
+      name: "Mety",
+      username: "dumbmety",
+      image: "https://i.ibb.co/DkMhc1J/image.png",
+      biography:
+        "Join me on my podcast for movie reviews, insights, and behind-the-scenes stories.",
+    },
+    transcript:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
   },
 ];
