@@ -49,7 +49,7 @@ export default function Blog() {
         <Subscribe />
       </section>
 
-      <Footer />
+      <Footer className="pb-12" />
     </div>
   );
 }

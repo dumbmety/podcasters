@@ -122,7 +122,7 @@ export default function PricingPage() {
           </Pricing>
         </ul>
 
-        <Footer />
+        <Footer className="pt-16" />
       </div>
     </div>
   );

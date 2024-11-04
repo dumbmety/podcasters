@@ -8,7 +8,7 @@ export default function Signup() {
       <Navbar activeLink="/signup" />
       <div className="container mx-auto px-6 py-16 flex flex-col min-h-[calc(100vh-83px)]">
         <SignupForm />
-        <Footer />
+        <Footer className="pt-4" />
       </div>
     </div>
   );

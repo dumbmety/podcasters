@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Navbar activeLink="/" />
-      <Cover cover={podcast.cover} />
+      <Cover cover={podcast.cover} url={podcast.source} />
 
       <section className="container mx-auto py-6 flex space-x-12">
         <aside className="space-y-12 w-[335px] -translate-y-64">

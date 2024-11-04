@@ -189,8 +189,7 @@ export const podcasts: Podcast[] = [
     slug: "cracking-the-code-the-genius-behind-money-heist",
     cover: "https://i.ibb.co/0VkN0ZB/cover.png",
     thumbnail: "https://i.ibb.co/pvTG5MK/thumbnail.png",
-    source:
-      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    source: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
     author: {
       name: "Mety",
       username: "dumbmety",
@@ -209,8 +208,7 @@ export const podcasts: Podcast[] = [
       "https://images.unsplash.com/photo-1727431682397-e1ffda5e0ca3?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     thumbnail:
       "https://images.unsplash.com/photo-1632726144626-6f6a8876e35d?q=80&w=1990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    source:
-      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    source: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
     author: {
       name: "John Speedster",
       username: "fastjohn",
@@ -244,8 +242,7 @@ export const podcasts: Podcast[] = [
       "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     thumbnail:
       "https://images.unsplash.com/photo-1551038247-3d9af20df552?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    source:
-      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    source: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
     author: {
       name: "Jane Arch",
       username: "architectjane",
@@ -275,8 +272,7 @@ export const podcasts: Podcast[] = [
       "https://images.unsplash.com/photo-1581092808365-07e3ac5960cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     thumbnail:
       "https://images.unsplash.com/photo-1643837706361-4615d2e4a8de?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    source:
-      "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/67085e2514b366c897d19554/media.mp3",
+    source: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
     author: {
       name: "Alex Wave",
       username: "audiowave",
