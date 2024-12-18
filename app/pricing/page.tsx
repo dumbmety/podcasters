@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import NumberFlow from "@number-flow/react";
 import { useState } from "react";
 
 import Footer from "@/components/shared/Footer";
@@ -48,8 +49,10 @@ export default function PricingPage() {
           <Pricing>
             <Pricing.Header>
               <Pricing.Title>Basic</Pricing.Title>
-              <Pricing.Amount discount={isYearly && 20}>
-                ${isYearly ? "8" : "10"} per month
+              <Pricing.Amount hasDiscount={isYearly} discount={20}>
+                <>
+                  $<NumberFlow value={isYearly ? "8" : "10"} /> per month
+                </>
               </Pricing.Amount>
               <Pricing.Switch value={isYearly} onChange={setIsYearly} />
             </Pricing.Header>
@@ -70,8 +73,10 @@ export default function PricingPage() {
           <Pricing isSelected>
             <Pricing.Header>
               <Pricing.Title>Business</Pricing.Title>
-              <Pricing.Amount discount={isYearly && 20}>
-                ${isYearly ? "12" : "14"} per month
+              <Pricing.Amount hasDiscount={isYearly} discount={20}>
+                <>
+                  $<NumberFlow value={isYearly ? "12" : "14"} /> per month
+                </>
               </Pricing.Amount>
               <Pricing.Switch value={isYearly} onChange={setIsYearly} />
             </Pricing.Header>

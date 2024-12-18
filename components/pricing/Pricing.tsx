@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { Switch } from "../ui/switch";
 import { Badge } from "../ui/badge";
+import { cn } from "@/lib/utils";
 
 function Pricing({
   isSelected,
@@ -35,14 +36,24 @@ function PricingTitle({ children }: { children: string }) {
 
 function PricingAmount({
   discount,
+  hasDiscount,
   children,
 }: {
   discount?: number | false;
-  children: string | string[];
+  hasDiscount?: boolean;
+  children: string | React.ReactElement;
 }) {
   return (
     <p className="font-light mb-5 flex items-center space-x-1">
-      <span>{children}</span> {discount && <Badge>-{discount}%</Badge>}
+      <span>{children}</span>{" "}
+      <Badge
+        className={cn(
+          "transition duration-300 pointer-events-none",
+          hasDiscount ? "opacity-100" : "opacity-0"
+        )}
+      >
+        -{discount}%
+      </Badge>
     </p>
   );
 }
