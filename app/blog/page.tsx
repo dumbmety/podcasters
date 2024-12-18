@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import BlogBanner from "@/components/blog/BlogBanner";
 import BlogFilters from "@/components/blog/BlogFilters";
 import BlogPosts from "@/components/blog/BlogPosts";
@@ -22,9 +23,11 @@ export default function Blog() {
           <Subscribe />
         </header>
 
-        <BlogFilters />
-        <BlogPosts />
-        <LoadMoreButton />
+        <Suspense fallback={<p>Loading...</p>}>
+          <BlogFilters />
+          <BlogPosts />
+          <LoadMoreButton />
+        </Suspense>
       </section>
 
       <BlogBanner />
