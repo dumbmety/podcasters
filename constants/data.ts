@@ -1,9 +1,13 @@
 import { Post, Podcast } from "@/types/models";
 
+export const siteContent = {
+  email: "mehdineysi@outlook.com",
+};
+
 export const posts: Post[] = [
   {
     title: "Mastering Typography in Web Design",
-    category: "Design",
+    category: "design",
     createdAt: "2022-06-21T00:00:00",
     createdBy: "Sophia Lee",
     slug: "mastering-typography-web-design",
@@ -14,7 +18,7 @@ export const posts: Post[] = [
   },
   {
     title: "The Power of Minimalism in UX",
-    category: "Design",
+    category: "design",
     createdAt: "2022-06-22T00:00:00",
     createdBy: "Liam Daniels",
     slug: "power-of-minimalism-ux",
@@ -25,7 +29,7 @@ export const posts: Post[] = [
   },
   {
     title: "Crafting Responsive Web Layouts",
-    category: "Development",
+    category: "development",
     createdAt: "2022-06-23T00:00:00",
     createdBy: "Ava James",
     slug: "crafting-responsive-web-layouts",
@@ -36,7 +40,7 @@ export const posts: Post[] = [
   },
   {
     title: "JavaScript Best Practices",
-    category: "Development",
+    category: "development",
     createdAt: "2022-06-24T00:00:00",
     createdBy: "Noah Martinez",
     slug: "javascript-best-practices",
@@ -47,7 +51,7 @@ export const posts: Post[] = [
   },
   {
     title: "Understanding CSS Grid Layout",
-    category: "Development",
+    category: "development",
     createdAt: "2022-06-25T00:00:00",
     createdBy: "Ethan Harris",
     slug: "understanding-css-grid-layout",
@@ -58,7 +62,7 @@ export const posts: Post[] = [
   },
   {
     title: "User-Centered Design Process Explained",
-    category: "Design",
+    category: "design",
     createdAt: "2022-06-26T00:00:00",
     createdBy: "Mia Nelson",
     slug: "user-centered-design-process-explained",
@@ -69,7 +73,7 @@ export const posts: Post[] = [
   },
   {
     title: "Why Wireframes Matter",
-    category: "Design",
+    category: "design",
     createdAt: "2022-06-27T00:00:00",
     createdBy: "Lucas Scott",
     slug: "why-wireframes-matter",
@@ -80,7 +84,7 @@ export const posts: Post[] = [
   },
   {
     title: "Building Scalable Microservices",
-    category: "Development",
+    category: "development",
     createdAt: "2022-06-28T00:00:00",
     createdBy: "Amelia Baker",
     slug: "building-scalable-microservices",
@@ -91,7 +95,7 @@ export const posts: Post[] = [
   },
   {
     title: "Designing with Accessibility in Mind",
-    category: "Design",
+    category: "design",
     createdAt: "2022-06-29T00:00:00",
     createdBy: "Oliver Smith",
     slug: "designing-with-accessibility-in-mind",
@@ -102,7 +106,7 @@ export const posts: Post[] = [
   },
   {
     title: "Creating Engaging Landing Pages",
-    category: "Marketing",
+    category: "marketing",
     createdAt: "2022-06-30T00:00:00",
     createdBy: "Sophia Hill",
     slug: "creating-engaging-landing-pages",
@@ -113,7 +117,7 @@ export const posts: Post[] = [
   },
   {
     title: "SEO Best Practices for Developers",
-    category: "Development",
+    category: "development",
     createdAt: "2022-07-01T00:00:00",
     createdBy: "Elijah Morgan",
     slug: "seo-best-practices-for-developers",
@@ -124,7 +128,7 @@ export const posts: Post[] = [
   },
   {
     title: "The Future of Remote Work",
-    category: "Business",
+    category: "business",
     createdAt: "2022-07-02T00:00:00",
     createdBy: "Charlotte Howard",
     slug: "the-future-of-remote-work",
@@ -135,7 +139,7 @@ export const posts: Post[] = [
   },
   {
     title: "Productivity Hacks for Developers",
-    category: "Development",
+    category: "development",
     createdAt: "2022-07-03T00:00:00",
     createdBy: "Mason Martinez",
     slug: "productivity-hacks-for-developers",
@@ -146,7 +150,7 @@ export const posts: Post[] = [
   },
   {
     title: "Mastering Figma for UI/UX Design",
-    category: "Design",
+    category: "design",
     createdAt: "2022-07-04T00:00:00",
     createdBy: "Lily Cooper",
     slug: "mastering-figma-for-ui-ux-design",
@@ -157,7 +161,7 @@ export const posts: Post[] = [
   },
   {
     title: "Top Marketing Strategies for 2023",
-    category: "Marketing",
+    category: "marketing",
     createdAt: "2022-07-05T00:00:00",
     createdBy: "Ethan Parker",
     slug: "top-marketing-strategies-2023",
@@ -168,7 +172,7 @@ export const posts: Post[] = [
   },
   {
     title: "Understanding Asynchronous JavaScript",
-    category: "Development",
+    category: "development",
     createdAt: "2022-07-06T00:00:00",
     createdBy: "Chloe Davis",
     slug: "understanding-asynchronous-javascript",

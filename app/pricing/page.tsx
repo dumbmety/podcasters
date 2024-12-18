@@ -6,6 +6,7 @@ import { useState } from "react";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/pricing/Pricing";
+import { siteContent } from "@/constants/data";
 
 export default function PricingPage() {
   const [isYearly, setIsYearly] = useState(true);
@@ -97,7 +98,7 @@ export default function PricingPage() {
                 </span>
                 <Link
                   className="hidden xl:inline-block text-center xl:text-left xl:border-b"
-                  href="mailto:dev.mehdineysi@gmail.com"
+                  href={`mailto:${siteContent.email}`}
                 >
                   contact sales
                 </Link>
